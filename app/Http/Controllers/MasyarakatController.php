@@ -47,7 +47,6 @@ class MasyarakatController extends Controller
     {
         $request->validate([
         'description' => 'required',
-        'image' => 'required',
         ]);
 
         $nik = Auth::user()->nik;
@@ -58,7 +57,6 @@ class MasyarakatController extends Controller
         $data['user_nik']=$nik;
         $data['user_id']=$id;
         $data['name']=$name;
-        $data['image'] = $request->file('image')->store('assets/laporan', 'public');
 
 
 

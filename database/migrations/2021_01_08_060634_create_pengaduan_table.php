@@ -20,7 +20,6 @@ class CreatePengaduanTable extends Migration
             $table->string('name');
             $table->integer('user_id');
             $table->text('description');
-            $table->string('image');
             $table->string('status')->default('Belum di Proses');
             $table->softDeletes();
 
